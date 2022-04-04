@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="page-body">
+    <header class="header">
+      <div class="container">
+        <div class="content">
+          <a lang="en" class="logo link" href="./index.html"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <nav class="nav">
+            <ul class="nav-list list">
+              <li class="nav-item"><a class="nav-link link" href="./index.html">Студия</a></li>
+              <li class="nav-item active">
+                <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts list">
+            <li class="contacts-item">
+              <a
+                class="contacts-link link"
+                lang="en"
+                href="meilto:info@devstudio.com"
+                target="_blank">
+                <svg class="contacts-icon icon-envelope" width="16" height="16">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link link" href="tel:+380961111111">
+                <svg class="contacts-icon icon-smartphone" width="16" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Portfolio</h1>
+          <ul class="filter list">
+            <li class="filter-item"><button class="filter-btn" type="button">Все</button></li>
+            <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Приложения</button>
+            </li>
+            <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
+            <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="cards-list list">
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/technocryack.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle">Технокряк</h2>
+                  <p class="cards-text text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/new-orlean-vs-golden-star.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="cards-text text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/sea-food-restaurant.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="cards-text text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/prime-shop.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle">Проект <span lang="en">Prime</span></h2>
+                  <p class="cards-text text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/project-boxes.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle">Проект <span lang="en">Boxes</span></h2>
+                  <p class="cards-text text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/inspiration-has-no-borders.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle" lang="en">Inspiration has no Borders</h2>
+                  <p class="cards-text text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/limited-edition.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="cards-text text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/project-lab.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle">Проект <span lang="en">LAB</span></h2>
+                  <p class="cards-text text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a class="cards-link link" href="" target="_blank">
+                <div class="overlay">
+                  <img src="./images/growing-business.jpg" width="370" alt="" />
+                  <div class="cards-thumb">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards-description">
+                  <h2 class="cards-subtitle subtitle" lang="en">Growing Business</h2>
+                  <p class="cards-text text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex-wrap">
+          <div class="footer-content">
+            <a lang="en" class="logo link" href=""><span class="accent">Web</span>Studio</a>
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-item place">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="address-item" lang="en">
+                  <a class="address-link link" href="meilto:info@devstudio.com" target="_blank"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a class="address-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-join-us">
+            <p class="join-us-title">Присоединяйтесь</p>
+            <ul class="join-us-links list">
+              <li class="join-us-item">
+                <a class="join-us-link" href="" target="_blank">
+                  <svg class="social-icons icon-instagram" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us-item">
+                <a class="join-us-link" href="" target="_blank">
+                  <svg class="social-icons icon-twitter" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us-item">
+                <a class="join-us-link" href="" target="_blank">
+                  <svg class="social-icons icon-facebook" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us-item">
+                <a class="join-us-link" href="" target="_blank">
+                  <svg class="social-icons icon-linkedin" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-subscribe">
+            <p class="subscribe-title">Подпишитесь на рассылку</p>
+            <form class="subscribe-field">
+              <input class="subscribe-input" type="email" name="subscribe" placeholder=" " />
+              <label class="subscribe-label">E-mail</label>
+              <button type="submit" class="subscribe-btn">
+                <span class="subscribe-btn-text">Подписаться</span>
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
