@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title lang="en">Portfolio</title>
-
+    <title lang="en">WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,12 +12,13 @@
       rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
   <body class="page-body">
     <header class="page-header">
       <div class="container">
-        <div class="flex-wrap">
+        <div class="flex-wrap flex-wrap--header">
           <a href="./index.html" class="logo link"
             ><span class="logo__item logo__item--accent">Web</span>Studio</a
           >
@@ -52,8 +52,174 @@
       </div>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="portfolio__title portfolio__title--hidden">Portfolio</h1>
+          <form class="filter">
+            <div class="filter__field" role="group">
+              <ul class="filter__list list">
+                <li class="filter__item">
+                  <input
+                    class="filter__input"
+                    value="all"
+                    type="radio"
+                    name="filter"
+                    id="all"
+                    checked />
+                  <label class="filter__label" for="all">Все</label>
+                </li>
+                <li class="filter__item">
+                  <input
+                    class="filter__input"
+                    value="web-saits"
+                    type="radio"
+                    name="filter"
+                    id="web-saits" />
+                  <label class="filter__label" for="web-saits">Веб-сайты</label>
+                </li>
+                <li class="filter__item">
+                  <input
+                    class="filter__input"
+                    value="applications"
+                    type="radio"
+                    name="filter"
+                    id="applications" />
+                  <label class="filter__label" for="applications">Приложения</label>
+                </li>
+                <li class="filter__item">
+                  <input
+                    class="filter__input"
+                    value="design"
+                    type="radio"
+                    name="filter"
+                    id="design" />
+                  <label class="filter__label" for="design">Дизайн</label>
+                </li>
+                <li class="filter__item">
+                  <input
+                    class="filter__input"
+                    value="marketing"
+                    type="radio"
+                    name="filter"
+                    id="marketing" />
+                  <label class="filter__label" for="marketing">Маркетинг</label>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="flex-wrap flex-wrap--footer">
+          <div class="notification">
+            <a href="./index.html" class="logo link logo--footer"
+              ><span class="logo__item logo__item--accent">Web</span>Studio</a
+            >
+
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a
+                    class="address__link link address__link--white-disabled"
+                    href=""
+                    target="_blank"
+                    tabindex="-1"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+
+                <li class="address__item">
+                  <a class="address__link link" href="mailto:info@devstudio.com" target="_blank"
+                    >info@devstudio.com</a
+                  >
+                </li>
+
+                <li class="address__item">
+                  <a class="address__link link" href="tel:+380961111111" target="_blank"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join-us">
+            <p class="join-us__title">присоединяйтесь</p>
+            <div class="social-links">
+              <ul class="social-links__list list">
+                <li class="social-links__item">
+                  <a href="" target="_blank" class="social-links__link social-links__link--footer">
+                    <svg
+                      class="social-links__icon social-links__icon--footer-white"
+                      width="20"
+                      height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-links__item">
+                  <a href="" target="_blank" class="social-links__link social-links__link--footer">
+                    <svg
+                      class="social-links__icon social-links__icon--footer-white"
+                      width="20"
+                      height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-links__item">
+                  <a href="" target="_blank" class="social-links__link social-links__link--footer">
+                    <svg
+                      class="social-links__icon social-links__icon--footer-white"
+                      width="20"
+                      height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-links__item">
+                  <a href="" target="_blank" class="social-links__link social-links__link--footer">
+                    <svg
+                      class="social-links__icon social-links__icon--footer-white"
+                      width="20"
+                      height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="subscribe">
+            <p class="subscribe__title">Подпишитесь на рассылку</p>
+            <form>
+              <div role="group" class="subscribe__field">
+                <input
+                  type="text"
+                  name="subscribe"
+                  id="subscribe"
+                  placeholder=" "
+                  class="subscribe__input" />
+                <label for="subscribe" class="subscribe__label">E-mail</label>
+                <button type="button" class="subscribe__button">
+                  Подписаться
+                  <svg class="subscribe__icon subscribe__icon--after" width="24" height="24">
+                    <use href="./images/sprite.svg#send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
