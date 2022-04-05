@@ -1,0 +1,9 @@
+// styles for title
+.title {
+  margin-bottom: 50px;
+
+  @include font-params(700, 36, 42, 0.03);
+  text-align: center;
+
+  color: $main-text-color;
+}

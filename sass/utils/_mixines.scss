@@ -1,0 +1,14 @@
+// for fonts params
+
+@mixin font-params($waight, $size, $height, $spacing) {
+  font-weight: $waight;
+  font-size: $size + px;
+  line-height: ($height/$size);
+  letter-spacing: $spacing + em;
+}
+
+// for transition
+
+@mixin anim-timing($property, $time: 250ms) {
+  transition: $property $time cubic-bezier(0.4, 0, 0.2, 1);
+}
