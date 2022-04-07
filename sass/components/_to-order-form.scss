@@ -1,0 +1,131 @@
+// Form field
+
+.form {
+  padding: 40px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form__title {
+  margin-bottom: 12px;
+
+  @include font-params(700, 20, 23, 0.03);
+  text-align: center;
+
+  color: $main-text-color;
+}
+.field-box {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.field__input-thumb {
+  display: inherit;
+  position: relative;
+}
+.field-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  @include anim-timing(fill);
+
+  .input:focus + & {
+    fill: $accent-color;
+  }
+}
+.label {
+  margin-bottom: 4px;
+
+  @include font-params(400, 12, 14, 0.01);
+  text-align: left;
+
+  color: $secondary-text-color;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 12px 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  @include anim-timing(border-color);
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.form__user-comment {
+  margin-bottom: 20px;
+}
+
+.form__comment-area {
+  height: 120px;
+  padding: 12px;
+
+  resize: none;
+
+  &::placeholder {
+    @include font-params(400, 14, 16, 0.01);
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__user-check {
+  margin-bottom: 30px;
+}
+
+.form__check-label {
+  position: relative;
+}
+
+.form__check-input {
+  &--hidden {
+    @extend %visually-hidden;
+  }
+}
+
+.form__check-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 2px solid $basic-black;
+  border-radius: 4px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: none;
+  background-color: none;
+
+  .form__check-input:focus:checked + & {
+    fill: $basic-white;
+    border: transparent;
+    background-color: $accent-color;
+  }
+}
+
+.form__check-text {
+  margin-left: 23px;
+
+  @include font-params(400, 14, 24, 0.03);
+
+  color: $secondary-text-color;
+}
+
+.form__check-link {
+  display: inline-block;
+
+  color: $accent-color;
+}
+
+.form__submit-btn {
+  @extend %modified-button;
+}

@@ -316,7 +316,7 @@ a {
   background-color: #188ce8;
 }
 
-.portfolio__title--hidden, .filter__input {
+.filter__input, .portfolio__title--hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -338,6 +338,7 @@ a {
 }
 
 .page-body {
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
