@@ -1,9 +1,9 @@
 // for fonts params
 
-@mixin font-params($waight, $size, $height, $spacing) {
-  font-weight: $waight;
+@mixin font-params($weight, $size, $height, $spacing) {
+  font-weight: $weight;
   font-size: $size + px;
-  line-height: ($height/$size);
+  line-height: calc($height / $size);
   letter-spacing: $spacing + em;
 }
 

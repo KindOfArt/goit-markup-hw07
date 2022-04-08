@@ -1,0 +1,7 @@
+// portfolio page
+
+.portfolio__title {
+  &--hidden {
+    @extend %visually-hidden;
+  }
+}

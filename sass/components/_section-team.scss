@@ -1,0 +1,52 @@
+// section team
+
+.team {
+  background-color: $bg-secound-color;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: $basic-white;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__thumb {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.team__description {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+
+  @include font-params(500, 16, 19, 0.03);
+
+  color: $main-text-color;
+}
+
+.team__appointment {
+  @include font-params(400, 16, 19, 0.03);
+
+  color: $secondary-text-color;
+}

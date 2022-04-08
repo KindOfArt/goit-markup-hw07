@@ -1,0 +1,31 @@
+// section hero
+
+.hero {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  @include font-params(900, 44, 60, 0.06em);
+  text-transform: uppercase;
+
+  color: $basic-white;
+}
+
+.hero__button {
+  @extend %modified-button;
+}

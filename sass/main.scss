@@ -1,243 +1,28 @@
-@import "./vars/colors";
+@import "./utils/variables";
 @import "./utils/mixines";
 @import "./bases/normilize";
 @import "./bases/reset";
-@import "./placeholders/button";
-@import "./placeholders/visually-hidden";
 @import "./components/local-reset";
+@import "./utils/placeholders/visually-hidden";
+@import "./utils/placeholders/button";
 @import "./components/page-body";
+@import "./components/sections";
 @import "./components/container";
 @import "./components/header";
-@import "./components/sections";
-@import "./components/titles";
+@import "./components/flex-wrap";
+@import "./components/logo";
+@import "./components/main-navigation";
+@import "./components/contacts";
+@import "./components/section-hero";
+@import "./components/section-features";
+@import "./components/section-job";
+@import "./components/section-team";
 @import "./components/social-links";
+@import "./components/section-clients";
 @import "./components/footer";
+@import "./components/notification";
+@import "./components/join-us";
+@import "./components/subscribe";
 @import "./components/backdrop";
 @import "./components/modal";
-@import "./components/to-order-form";
-
-// flex wrap for header and footer
-
-.flex-wrap {
-  display: flex;
-  align-items: center;
-
-  &--footer {
-    align-items: unset;
-  }
-}
-
-// section hero
-
-.hero {
-  display: flex;
-  align-items: center;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-
-  text-align: center;
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-photo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero__title {
-  margin-bottom: 30px;
-
-  @include font-params(900, 44, 60, 0.06em);
-  text-transform: uppercase;
-
-  color: $basic-white;
-}
-
-.hero__button {
-  @extend %modified-button;
-}
-
-// section features
-
-.features__title {
-  &--hidden {
-    @extend %visually-hidden;
-  }
-}
-
-.features__list {
-  display: flex;
-}
-
-.features__item {
-  width: calc((100%-90px) / 4);
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.features__thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  border-radius: 4px;
-
-  background-color: $bg-secound-color;
-}
-
-.features__icon {
-  display: inline-block;
-}
-
-.features__item-subtitle {
-  margin-bottom: 10px;
-
-  @include font-params(700, 14, 16, 0.03);
-  text-transform: uppercase;
-
-  color: $main-text-color;
-}
-
-.features__item-name {
-  @include font-params(400, 14, 24, 0.03);
-
-  color: $secondary-text-color;
-}
-
-// section job
-
-.job__list {
-  display: flex;
-  padding-bottom: 94px;
-}
-
-.job__item {
-  width: calc((100%-60px) / 3);
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.job__thumb {
-  position: relative;
-}
-
-.job__description {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 27px 0;
-
-  @include font-params(700, 14, 16, 0.03);
-  text-transform: uppercase;
-  text-align: center;
-
-  color: $basic-white;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-// section team
-
-.team {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $bg-secound-color;
-}
-
-.team__list {
-  display: flex;
-}
-
-.team__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: calc((100%-90px) / 4);
-  padding-bottom: 30px;
-
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  background-color: $basic-white;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.team__thumb {
-  width: 270px;
-  margin-bottom: 30px;
-}
-
-.team__description {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.team__name {
-  margin-bottom: 10px;
-
-  @include font-params(500, 16, 19, 0.03);
-
-  color: $main-text-color;
-}
-
-.team__appointment {
-  @include font-params(400, 16, 19, 0.03);
-
-  color: $secondary-text-color;
-}
-
-// section clients
-
-.clients__list {
-  display: flex;
-}
-
-.clients__item {
-  width: calc((100%-150px) / 6);
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.clients__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  padding: 32px 16px;
-  border: 1px solid $unactive-links;
-  border-radius: 4px;
-
-  @include anim-timing(border-color);
-
-  &:hover,
-  &:focus {
-    border-color: $accent-color;
-  }
-}
-
-.client__icon {
-  @include anim-timing(fill);
-
-  fill: $unactive-links;
-
-  .clients__link:hover &,
-  .clients__link:focus & {
-    fill: $accent-color;
-  }
-}
+@import "./components/form-to-order";

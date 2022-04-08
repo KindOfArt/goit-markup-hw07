@@ -1,0 +1,14 @@
+// footer join us
+
+.join-us {
+  margin-top: 72px;
+}
+
+.join-us__title {
+  margin-bottom: 20px;
+
+  @include font-params(700, 14, 16, 0.03);
+  text-transform: uppercase;
+
+  color: $basic-white;
+}

@@ -1,0 +1,30 @@
+// footer notification
+
+.notification {
+  padding: 60px 0;
+  margin-right: 70px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  @include font-params(400, 14, 24, 0.03);
+  font-style: normal;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  @include anim-timing(color);
+
+  &--white-disabled {
+    color: $basic-white;
+
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

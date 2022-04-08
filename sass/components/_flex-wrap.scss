@@ -1,0 +1,10 @@
+// flex wrap for header and footer
+
+.flex-wrap {
+    display: flex;
+    align-items: center;
+  
+    &--footer {
+      align-items: unset;
+    }
+  }

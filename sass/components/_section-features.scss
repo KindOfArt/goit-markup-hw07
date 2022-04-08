@@ -1,0 +1,49 @@
+// section features
+
+.features__title {
+  &--hidden {
+    @extend %visually-hidden;
+  }
+}
+
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+
+  background-color: $bg-secound-color;
+}
+
+.features__icon {
+  display: inline-block;
+}
+
+.features__item-subtitle {
+  margin-bottom: 10px;
+
+  @include font-params(700, 14, 16, 0.03);
+  text-transform: uppercase;
+
+  color: $main-text-color;
+}
+
+.features__item-name {
+  @include font-params(400, 14, 24, 0.03);
+
+  color: $secondary-text-color;
+}

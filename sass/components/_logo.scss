@@ -1,0 +1,23 @@
+// logo
+
+.logo {
+  display: inline-block;
+  @include font-params(700, 26, 31, 0.03);
+
+  color: $basic-black;
+
+  &--light {
+    margin-bottom: 20px;
+
+    color: $basic-white;
+  }
+}
+
+.logo__item {
+  &--accent {
+    font-family: $Relaway;
+    @include font-params(700, 26, 31, 0.03);
+
+    color: $accent-color;
+  }
+}

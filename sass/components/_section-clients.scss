@@ -1,0 +1,42 @@
+// section clients
+
+.clients__list {
+  display: flex;
+}
+
+.clients__item {
+  width: calc((100% - 150px) / 6);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  padding: 32px 16px;
+  border: 1px solid $unactive-links;
+  border-radius: 4px;
+
+  @include anim-timing(border-color);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.client__icon {
+  @include anim-timing(fill);
+
+  fill: $unactive-links;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
+}

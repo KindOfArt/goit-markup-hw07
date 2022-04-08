@@ -1,23 +1,23 @@
-@import "./vars/colors";
+@import "./utils/variables";
 @import "./utils/mixines";
 @import "./bases/normilize";
 @import "./bases/reset";
-@import "./placeholders/button";
-@import "./placeholders/visually-hidden";
 @import "./components/local-reset";
+@import "./utils/placeholders/visually-hidden";
+@import "./utils/placeholders/button";
 @import "./components/page-body";
+@import "./components/sections";
 @import "./components/container";
 @import "./components/header";
-@import "./components/sections";
-@import "./components/social-links";
-@import "./components/footer";
+@import "./components/flex-wrap";
+@import "./components/logo";
+@import "./components/main-navigation";
+@import "./components/contacts";
+@import "./components/section-portfolio";
 @import "./components/filter";
 @import "./components/card-set";
-
-// section portfolio
-
-.portfolio__title {
-  &--hidden {
-    @extend %visually-hidden;
-  }
-}
+@import "./components/footer";
+@import "./components/notification";
+@import "./components/join-us";
+@import "./components/social-links";
+@import "./components/subscribe";

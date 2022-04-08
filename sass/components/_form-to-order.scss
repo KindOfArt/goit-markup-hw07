@@ -105,6 +105,10 @@
   fill: none;
   background-color: none;
 
+  .form__check-label:hover & {
+    cursor: pointer;
+  }
+
   .form__check-input:focus:checked + & {
     fill: $basic-white;
     border: transparent;
